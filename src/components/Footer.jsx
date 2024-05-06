@@ -4,9 +4,9 @@ const heading = 'Designed and Built by Caden Chen';
 
 
 const design1 = 'Figma'
-const design1Link = 'https://www.figma.com/'
+const design1Link = 'https://www.figma.com/file/LtM3Uo7Bd15BFHyZIceQXT/Caden-Linktree?type=design&node-id=1%3A29&mode=design&t=HYxCfWs1Teon1L6g-1'
 const design2 = 'Github'
-const design2Link = 'https://github.com/'
+const design2Link = 'https://github.com/Caden0002/portfolioLink'
 
 function Footer(props) {
     return (
