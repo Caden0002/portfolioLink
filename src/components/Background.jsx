@@ -1,4 +1,3 @@
-// Background.js
 import React from 'react';
 import Morning from '/Morning.gif'; 
 import Afternoon from '/Afternoon.gif'; 
@@ -7,6 +6,8 @@ import Night from '/Night.gif';
 
 const Background = ({ children, newGreeting }) => {
     let backgroundImage;
+    let backgroundSize = 'cover';
+    let backgroundPosition = 'center bottom';
 
     if (newGreeting) {
         // Set the background image based on the newGreeting
@@ -27,8 +28,17 @@ const Background = ({ children, newGreeting }) => {
         backgroundImage = Night;
     }
 
+    // Check if the screen width is less than 768px (mobile)
+    const isMobile = window.innerWidth < 768;
+
+    // Apply different styles based on the screen width
+    if (isMobile) {
+        backgroundSize = '200% 100%';
+        backgroundPosition = 'left bottom';
+    }
+
     return (
-        <div className="relative top-0 left-0 w-screen h-screen overflow-y-scroll" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center bottom' }}>
+        <div className="relative top-0 left-0 w-screen h-screen overflow-y-scroll" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize, backgroundPosition }}>
             <div className="relative z-10">
                 {children}
             </div>

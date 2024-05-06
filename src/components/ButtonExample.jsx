@@ -24,12 +24,12 @@ const ButtonExample = ({ text, link }) => { // Corrected component name
     >
       {/* Second rectangle: Positioned first, behind the first rectangle */}
       <div
-        className="bg-neutral-950 rounded-lg w-[330px] h-[53px] sm:w-[430px] sm:h-[63px]"
+        className="bg-neutral-950 rounded-lg w-[330px] h-[53px] sm:w-[430px] sm:h-[63px] opacity-50"
         style={{ zIndex: 1, position: 'relative', left: '9px', top: '11px' }}
       ></div>
       {/* First rectangle: Positioned second, above the second rectangle */}
       <div
-        className="absolute bg-neutral-50 inset-0 rounded-lg w-[330px] h-[53px] sm:w-[430px] sm:h-[63px]"
+        className="absolute bg-neutral-50 inset-0 rounded-lg w-[330px] h-[53px] sm:w-[430px] sm:h-[63px] opacity-90"
         style={{
           zIndex: 2,
           transform: isHovered ? 'translate(4px, 3px)' : 'translate(0, 0)',
