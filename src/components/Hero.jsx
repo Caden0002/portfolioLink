@@ -1,6 +1,5 @@
 import React from 'react';
 import ButtonExample from './ButtonExample.jsx'; 
-import Footer from './Footer.jsx'; 
 import '../../styles.css';
 
 const name = "Caden Chen";
@@ -44,7 +43,6 @@ function Hero({ newGreeting }) {
           <ButtonExample key={index} text={button.text} link={button.link} />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }
