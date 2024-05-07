@@ -22,7 +22,7 @@ const socialsButtons = [
 ];
 
 function Hero({ newGreeting }) {
-  const textColorClass = newGreeting === 'Night Time' ? 'text-textColorSecondary' : 'text-textColorPrimary';
+  const textColorClass = (newGreeting === 'Night Time' || newGreeting === 'Evening Time') ? 'text-textColorSecondary' : 'text-textColorPrimary';
 
   return (
     <div className="container max-w-screen-xl mx-auto flex flex-col justify-center items-center md:min-h-screen relative z-10">
