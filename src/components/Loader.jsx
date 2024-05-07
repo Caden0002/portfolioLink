@@ -48,7 +48,7 @@ function Loader(props) {
         >
             <Time setTimeAndGreeting={setTimeAndGreeting} />
             <motion.div
-                className="text-2xl text-white font-VT flex flex-col items-center justify-center"
+                className="text-3xl text-white font-VT flex flex-col items-center justify-center"
                 animate={timeControls} // Animate the text elements
             >
                 <motion.div

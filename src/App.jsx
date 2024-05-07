@@ -18,7 +18,6 @@ export default function App() {
             <Background newGreeting={timeAndGreeting.newGreeting}>
                 <Hero newGreeting={timeAndGreeting.newGreeting}/>
                 <Footer />
-
             </Background>
             {/* <ButtonExample /> */}
         </>

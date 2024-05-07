@@ -1,9 +1,10 @@
 import React from 'react';
+import { FaLinkedin, FaMedium, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'; // Import the required icons
 import ButtonExample from './ButtonExample.jsx'; 
 import '../../styles.css';
 
 const name = "Caden Chen";
-const position = "Web Developer\nReact • Figma";
+const position = "Web Developer\nReact • Framer • Figma";
 const categories1 = "• Business •";
 const categories2 = "• Socials •";
 
@@ -13,11 +14,11 @@ const businessButtons = [
 ];
 
 const socialsButtons = [
-    { text: "LinkedIn", link: "https://www.linkedin.com/in/caden-chen-576189205/" },
-    { text: "Medium", link: "https://medium.com/@caden0002" },
-    { text: "Github", link: "https://github.com/Caden0002" },
-    { text: "Instagram", link: "https://www.instagram.com/c_cadenqx/" },
-    { text: "Twitter", link: "https://twitter.com/Caden0002" }
+    { text: "LinkedIn", link: "https://www.linkedin.com/in/caden-chen-576189205/", icon: <FaLinkedin /> },
+    { text: "Medium", link: "https://medium.com/@caden0002", icon: <FaMedium /> },
+    { text: "Github", link: "https://github.com/Caden0002", icon: <FaGithub /> },
+    { text: "Instagram", link: "https://www.instagram.com/c_cadenqx/", icon: <FaInstagram /> },
+    { text: "Twitter", link: "https://twitter.com/Caden0002", icon: <FaTwitter /> }
 ];
 
 function Hero({ newGreeting }) {
@@ -38,11 +39,13 @@ function Hero({ newGreeting }) {
       </div>
       <div className={`mt-5 text-xl font-semibold text-center ${textColorClass}`}>{categories2}</div>
 
-      <div className='mt-5 flex flex-col text-4xl text-black space-y-4'>
-        {socialsButtons.map((button, index) => (
-          <ButtonExample key={index} text={button.text} link={button.link} />
-        ))}
-      </div>
+      <div className='mt-5 flex flex-col text-black space-y-4'>
+  {socialsButtons.map((button, index) => (
+    <div key={index} className="flex items-center">
+      <ButtonExample text={button.text} link={button.link} icon={button.icon} />
+    </div>
+  ))}
+</div>
     </div>
   );
 }
