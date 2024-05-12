@@ -9,9 +9,10 @@ const categories1 = "• Business •";
 const categories2 = "• Socials •";
 
 const businessButtons = [
-  { text: "cadenchen.net", link: "https://cadenchen.net/" },
-  { text: "designecraft.com", link: "https://designecraft.com/" }
+  { text: "cadenchen.net", link: "https://cadenchen.net/", description: "Portfolio" },
+  { text: "designecraft.com", link: "https://designecraft.com/", description: "Company" }
 ];
+
 
 const socialsButtons = [
     { text: "LinkedIn", link: "https://www.linkedin.com/in/caden-chen-576189205/", icon: <FaLinkedin /> },
@@ -33,10 +34,10 @@ function Hero({ newGreeting }) {
       <div className={`mt-5 text-base whitespace-pre-line text-center ${textColorClass}`}>{position}</div>
       <div className={`mt-5 text-xl font-semibold text-center ${textColorClass}`}>{categories1}</div>
       <div className='mt-5 flex flex-col text-4xl text-black space-y-4'>
-        {businessButtons.map((button, index) => (
-          <ButtonExample key={index} text={button.text} link={button.link} />
-        ))}
-      </div>
+  {businessButtons.map((button, index) => (
+    <ButtonExample key={index} text={button.text} link={button.link} description={button.description} />
+  ))}
+</div>
       <div className={`mt-5 text-xl font-semibold text-center ${textColorClass}`}>{categories2}</div>
 
       <div className='mt-5 flex flex-col text-black space-y-4'>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ButtonExample = ({ text, link, icon }) => {
+const ButtonExample = ({ text, link, icon, description }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   // Function to handle hover start
@@ -40,6 +40,12 @@ const ButtonExample = ({ text, link, icon }) => {
           <div className="flex items-center justify-center h-full">
             <div className="text-black text-lg sm:text-xl font-semibold">{text}</div>
           </div>
+          {/* Description */}
+          {description && (
+  <div className="absolute top-0 right-0 bg-black text-white text-xs rounded-tr-lg rounded-bl-lg py-1 px-2" style={{ fontSize: '10px' }}>
+              {description}
+            </div>
+          )}
         </div>
       </button>
     </a>
