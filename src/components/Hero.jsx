@@ -9,7 +9,7 @@ const categories1 = "• Business •";
 const categories2 = "• Socials •";
 
 const businessButtons = [
-  { text: "cadenchen.net", link: "https://cadenchen.net/", description: "Portfolio" },
+  { text: "cadenchen.net", link: "https://cadenchen.net/", description: "Personal" },
   { text: "designecraft.com", link: "https://designecraft.com/", description: "Company" }
 ];
 

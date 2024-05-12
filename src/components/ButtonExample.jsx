@@ -42,7 +42,7 @@ const ButtonExample = ({ text, link, icon, description }) => {
           </div>
           {/* Description */}
           {description && (
-  <div className="absolute top-0 right-0 bg-black text-white text-xs rounded-tr-lg rounded-bl-lg py-1 px-2" style={{ fontSize: '10px' }}>
+  <div className="absolute top-0 right-0 bg-black text-white text-xxxs sm:text-xxs rounded-tr-lg rounded-bl-lg py-1 px-2 leading-4">
               {description}
             </div>
           )}

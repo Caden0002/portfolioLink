@@ -20,6 +20,11 @@ module.exports = {
         VT: ["VT323", "monospace"],
       },
 
+      fontSize: {
+        'xxs': '10px',
+        'xxxs': '8px',
+      },
+
       colors: {
         // Define your color variables here
         textColorPrimary: '#000000',
