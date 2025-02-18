@@ -12,7 +12,7 @@ export default function App() {
   });
 
   return (
-    <div className="overscroll-none">
+    <div className="">
       <Loader />
       <Time setTimeAndGreeting={setTimeAndGreeting} />
       <Background newGreeting={timeAndGreeting.newGreeting}>
