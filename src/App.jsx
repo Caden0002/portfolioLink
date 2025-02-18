@@ -12,16 +12,13 @@ export default function App() {
   });
 
   return (
-    <>
+    <div className="overscroll-none">
       <Loader />
-      {/* Render the Time component and pass setTimeAndGreeting as a prop */}
       <Time setTimeAndGreeting={setTimeAndGreeting} />
-      {/* Pass the newGreeting prop to the Background component */}
       <Background newGreeting={timeAndGreeting.newGreeting}>
         <Hero newGreeting={timeAndGreeting.newGreeting} />
         <Footer />
       </Background>
-      {/* <ButtonExample /> */}
-    </>
+    </div>
   );
 }
