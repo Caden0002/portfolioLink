@@ -49,7 +49,7 @@ const socialsButtons = [
 
 function Hero({ newGreeting }) {
   const textColorClass =
-    newGreeting === "Night Time" || newGreeting === "Evening Time"
+    newGreeting === "Early Evening" || newGreeting === "Late Night"
       ? "text-textColorSecondary"
       : "text-textColorPrimary";
 
