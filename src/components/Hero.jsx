@@ -10,7 +10,7 @@ import ButtonExample from "./ButtonExample.jsx";
 import "../../styles.css";
 
 const name = "Caden Chen";
-const position = "Web Developer\nReact • Framer • Figma";
+const position = "Full Stack Developer\nMERN • Figma";
 const categories1 = "• Business •";
 const categories2 = "• Socials •";
 
@@ -20,11 +20,11 @@ const businessButtons = [
     link: "https://cadenchen.net/",
     description: "Personal",
   },
-  {
-    text: "designecraft.com",
-    link: "https://designecraft.com/",
-    description: "Company",
-  },
+  //   {
+  //     text: "designecraft.com",
+  //     link: "https://designecraft.com/",
+  //     description: "Company",
+  //   },
 ];
 
 const socialsButtons = [
